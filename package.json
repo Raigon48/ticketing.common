@@ -7,6 +7,7 @@
   "files": [
     "build/**/*"
   ],
+  "type": "module",
   "scripts": {
     "clean": "del-cli build -f",
     "build": "npm run clean && tsc",
