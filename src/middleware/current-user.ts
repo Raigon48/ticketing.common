@@ -32,7 +32,9 @@ export const currentUser = (
     ) as UserPayLoad;
     console.log(payload);
     req.currentUser = payload;
-  } catch (err) {}
+  } catch (err) {
+    console.log(err);
+  }
 
   next();
 };
